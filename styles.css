@@ -265,33 +265,43 @@ select {
   font-size: var(--font-size-landing-page-secondary-header);
 }
 
-.main-botton {
-  font-size: var(--font-size-20);
-  font-weight: var(--font-weigth-medium);
+.button {
   border: none;
   border-radius: var(--space-50);
-  background-color: var(--color-white);
-  margin-top: 2rem;
+  box-shadow: 0 1.125em 1em -1em var(--color-grey);
   cursor: pointer;
   position: relative;
   transition: all 0.35s;
   outline: none;
   width: var(--space-270);
   height: var(--space-55);
-  box-shadow: 0 1.125em 1em -1em var(--color-grey);
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weigth-medium);
+  background-color: var(--color-white);
+  margin: 4rem 0 4rem 0;
 }
 
-.main-botton:hover {
+button a {
+  color: var(--color-grey);
+}
+.form-botton {
+  background-color: var(--color-orange-brown);
+  margin-left: 3%;
+}
+
+.form-botton a {
+  color: var(--color-white);
+}
+
+button:hover {
   box-shadow: none;
   scale: 1.05;
   transition: all 0.35s ease-in-out;
 }
 
-.main-botton a {
-  position: relative;
-  z-index: 2;
-  color: var(--color-grey);
-  text-decoration: none;
+.fifth-page-botton-wrapper {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and(max-width: 47em) {
@@ -456,9 +466,6 @@ select {
     margin-right: auto;
     margin-block: var(--space-10);
   }
-  .second-page-content .main-botton {
-    margin-top: 0;
-  }
 }
 
 .third-page {
@@ -587,36 +594,6 @@ select {
   line-height: 2rem;
 }
 
-.fourth-page button {
-  font-size: var(--font-size-20);
-  font-weight: var(--font-weigth-medium);
-  border: none;
-  border-radius: var(--space-50);
-  background-color: var(--color-white);
-  margin-top: 2rem;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
-  width: var(--space-270);
-  height: var(--space-55);
-  box-shadow: 0 1.125em 1em -1em var(--color-grey);
-  justify-content: center;
-}
-
-.fourth-page-botton:hover {
-  box-shadow: none;
-  scale: 1.05;
-  transition: all 0.35s ease-in-out;
-}
-
-.fourth-page-botton a {
-  position: relative;
-  z-index: 2;
-  color: var(--color-grey);
-  text-decoration: none;
-}
-
 .fourth-page-botton-wrapper {
   margin-inline: 8%;
 }
@@ -714,40 +691,6 @@ select {
   transform: translate(100px, -270px);
 }
 
-.fifth-page-botton {
-  font-size: var(--font-size-20);
-  font-weight: var(--font-weigth-medium);
-  border: none;
-  border-radius: var(--space-50);
-  background-color: var(--color-white);
-  margin-top: 2rem;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
-  width: var(--space-270);
-  height: var(--space-55);
-  box-shadow: 0 1.125em 1em -1em var(--color-grey);
-  margin-bottom: 5rem;
-}
-.fifth-page-botton-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.fifth-page-botton:hover {
-  box-shadow: none;
-  scale: 1.05;
-  transition: all 0.35s ease-in-out;
-}
-
-.fifth-page-botton a {
-  position: relative;
-  z-index: 2;
-  color: var(--color-grey);
-  text-decoration: none;
-}
-
 @media screen and (max-width: 80em) {
   .fifth-page-wrapper {
     width: 800px;
@@ -788,9 +731,6 @@ select {
   .fifth-page h1 {
     font-size: var(--font-size-28);
     font-weight: var(--font-weight-semi-bold);
-  }
-  .fifth-page-botton-wrapper {
-    margin-bottom: -2rem;
   }
 }
 
@@ -875,46 +815,18 @@ select {
 }
 .field-set label {
   color: var(--color-grey);
-  margin-left: 30px;
+  margin-left: 1.875rem;
   font-size: var(--font-size-20);
 }
 
 .field input {
-  margin-left: 30px;
+  margin-left: 1.875rem;
   min-width: 380px;
   height: 50px;
   border: none;
   background-color: var(--color-white);
   border-bottom: 2px solid var(--color-orange-brown);
-  padding: 12px;
-}
-
-.form-botton {
-  font-size: var(--font-size-20);
-  font-weight: var(--font-weigth-medium);
-  border: none;
-  border-radius: var(--space-50);
-  background-color: var(--color-orange-brown);
-  margin-top: 2rem;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
-  width: var(--space-270);
-  height: var(--space-55);
-  box-shadow: 0 1.125em 1em -1em var(--color-grey);
-  margin-left: 3%;
-}
-
-.form-botton:hover {
-  box-shadow: none;
-  scale: 1.05;
-  transition: all 0.35s ease-in-out;
-}
-
-.form-botton a {
-  z-index: 2;
-  color: var(--color-white);
+  padding: 0.75rem;
 }
 
 .radio-group {
@@ -997,6 +909,6 @@ select {
     height: 100%;
   }
 }
-.radio-group fieldset{
+.radio-group fieldset {
   border: none;
 }

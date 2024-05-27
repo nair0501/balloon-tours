@@ -1,324 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" contet="width=device-width, initial-scale=1.0" />
-    <title>Ballon Tours</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
-    />
-    <script defer src="file.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <nav class="nav-bar">
-        <ul class="side-bar" role="list">
-          <div class="close-menu" onclick="hideSidebar()">
-            <svg
-              class="close-menu"
-              fill="white"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 384 512"
-            >
-              <path
-                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-              />
-            </svg>
-          </div>
-          <li class="navbar-item">
-            <a href="#about-us" class="navbar-links" id="about-us">About us</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#discounts" class="navbar-links" id="discounts"
-              >Discounts</a
-            >
-          </li>
-          <li class="navbar-item">
-            <a href="#tours" class="navbar-links" id="tours">Tours</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#prices" class="navbar-links" id="prices">Prices</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#connect" class="navbar-links" id="connect">Connect</a>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" contet="width=device-width, initial-scale=1.0" />
+  <title>Ballon Tours</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <script defer src="file.js"></script>
+</head>
+
+<body>
+
+  <div class="side-bar-wrapper">
+    <div class="close-menu" onclick="hideSidebar()">
+      <svg class="close-menu" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+      </svg>
+    </div>
+    <ul class="side-bar">
+      <li class="navbar-item">
+        <a href="#about-us" class="navbar-links">About us</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#discounts" class="navbar-links">Discounts</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#tours" class="navbar-links">Tours</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#prices" class="navbar-links">Prices</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#connect" class="navbar-links">Connect</a>
+      </li>
+    </ul>
+  </div>
+
+  <header class="primary-header">
+      <div class="nav-wrapper">
+        <nav class="primary-navigation" id="primary-navigation">
         <div class="hamburger-menu" onclick="showSidebar()">
-          <svg
-            class="hamburger-menu"
-            fill="white"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-          >
+          <svg class="hamburger-menu" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path
-              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-            />
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
           </svg>
         </div>
-
         <a href="#home" id="navbar-logo">
           <img class="logo" src="images/Icon-logo.svg" alt="baloon-tours" />
         </a>
-        <ul class="navbar-menu" aria-label="primary" role="list">
+        <ul class="nav-list" aria-label="primary" role="list">
           <li class="navbar-item">
-            <a href="#about-us" class="navbar-links" id="about-us">About us</a>
+            <a href="#about-us" class="navbar-links">About us</a>
           </li>
           <li class="navbar-item">
-            <a href="#discounts" class="navbar-links" id="discounts"
-              >Discounts</a
-            >
+            <a href="#discounts" class="navbar-links">Discounts</a>
           </li>
           <li class="navbar-item">
-            <a href="#tours" class="navbar-links" id="tours">Tours</a>
+            <a href="#tours" class="navbar-links">Tours</a>
           </li>
           <li class="navbar-item">
-            <a href="#prices" class="navbar-links" id="prices">Prices</a>
+            <a href="#prices" class="navbar-links">Prices</a>
           </li>
           <li class="navbar-item">
-            <a href="#connect" class="navbar-links" id="connect">Connect</a>
+            <a href="#connect" class="navbar-links">Connect</a>
           </li>
         </ul>
-      </nav>
-    </header>
+        </nav>
+      </div>
+  </header>
 
-    <div class="hero" id="home">
-      <div class="hero-container">
-        <h1 class="hero-heading">BALLOON TOURS</h1>
-        <p class="hero-description">An unforgettable adventure awaits you</p>
-        <button class="main-botton"><a href="#">Catalog</a></button>
+  <div class="hero" id="about-us">
+    <div class="hero-container">
+      <h1 class="hero-heading">BALLOON TOURS</h1>
+      <p class="hero-description">An unforgettable adventure awaits you</p>
+      <button class="main-botton"><a href="#">Catalog</a></button>
+    </div>
+  </div>
+
+  <div class="second-page" id="discounts">
+    <h1>An incredible feeling of freedom</h1>
+    <div class="second-page-container">
+      <div class="second-page-content">
+        <p>
+          ALLOW YOURSELF AN ADVENTURE
+          <span>The mission of the organization, is providing various more
+            exciting forms of activity, bringing more joy to your day to day
+            life. We will organize and implement the best vacation of your
+            life. The mission of the organization, isproviding various more
+            exciting forms of activity, bringing more joy to your day to day
+            life. We will organize and implement the best vacation of your
+            life.
+          </span>
+        </p>
+        <p>
+          6000 METERS ABOVE SEA LEVEL
+          <span>The mission of the organization, is providing various more
+            exciting forms of activity, bringing more joy to your day to day
+            life. We will organize and implement the best vacation of your
+            life. The mission of the organization, isproviding various more
+            exciting forms of activity, bringing more joy to your day to day
+            life. We will organize and implement the best vacation of your
+            life.
+          </span>
+        </p>
+        <button class="main-botton"><a href="#">learn more</a></button>
+      </div>
+      <div class="travel-img-container">
+        <div class="travel-img-card">
+          <img class="image1" src="images/baloon.jpg" />
+          <img class="image2" src="images/baloons-mountain.jpg" />
+          <img class="image3" src="images/many-baloons.jpg" />
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="second-page">
-      <h1>An incredible feeling of freedom</h1>
-      <div class="second-page-container">
-        <div class="second-page-content">
-          <p>
-            ALLOW YOURSELF AN ADVENTURE
-            <span
-              >The mission of the organization, is providing various more
-              exciting forms of activity, bringing more joy to your day to day
-              life. We will organize and implement the best vacation of your
-              life. The mission of the organization, isproviding various more
-              exciting forms of activity, bringing more joy to your day to day
-              life. We will organize and implement the best vacation of your
-              life.
-            </span>
-          </p>
-          <p>
-            6000 METERS ABOVE SEA LEVEL
-            <span
-              >The mission of the organization, is providing various more
-              exciting forms of activity, bringing more joy to your day to day
-              life. We will organize and implement the best vacation of your
-              life. The mission of the organization, isproviding various more
-              exciting forms of activity, bringing more joy to your day to day
-              life. We will organize and implement the best vacation of your
-              life.
-            </span>
-          </p>
-          <button class="main-botton"><a href="#">learn more</a></button>
-        </div>
-        <div class="travel-img-container">
-          <div class="travel-img-card">
-            <img class="image1" src="images/baloon.jpg" />
-            <img class="image2" src="images/baloons-mountain.jpg" />
-            <img class="image3" src="images/many-baloons.jpg" />
+  <div class="third-page" id="tours">
+    <div class="third-page-wrapper">
+      <div class="locations-card">
+        <img src="images/Vector.svg" />
+        <h3>ADVENTURE</h3>
+        <p>
+          The mission of the organization, in particular the further
+          development of various social activities
+        </p>
+      </div>
+      <div class="locations-card">
+        <img src="images/Vector (1).svg" />
+        <h3>ADVENTURE</h3>
+        <p>
+          The mission of the organization, in particular the further
+          development of various social activities
+        </p>
+      </div>
+      <div class="locations-card">
+        <img src="images/Vector (2).svg" />
+        <h3>ADVENTURE</h3>
+        <p>
+          The mission of the organization, in particular the further
+          development of various social activities
+        </p>
+      </div>
+      <div class="locations-card">
+        <img src="images/Vector (3).svg" />
+        <h3>ADVENTURE</h3>
+        <p>
+          The mission of the organization, in particular the further
+          development of various social activities
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="fourth-page" id="prices">
+    <h1>MOST POPULAR TOURS</h1>
+    <div class="fourth-page-wrapper">
+      <div class="fourth-page-card">
+        <img src="images/Photo-card (2).jpg" />
+        <h3>GROUP TOURS</h3>
+        <p>
+          Groups consisting 6 people<br />
+          Duration 2 hours<br />
+          There is 1 guide in each group<br />
+          Flight range 6km<br />
+          Free souvenirs<br />
+        </p>
+      </div>
+      <div class="fourth-page-card">
+        <img src="images/Photo-card.jpg" />
+        <h3>PRIVATE TOURS</h3>
+        <p>
+          Groups consisting 6 people<br />
+          Duration 2 hours<br />
+          There is 1 guide in each group<br />
+          Flight range 6km<br />
+          Free souvenirs<br />
+        </p>
+      </div>
+      <div class="fourth-page-card">
+        <img src="images/Photo-card (1).jpg" />
+        <h3>INSPECTION SITES</h3>
+        <p>
+          Groups consisting 6 people<br />
+          Duration 2 hours<br />
+          There is 1 guide in each group<br />
+          Flight range 6km<br />
+          Free souvenirs<br />
+        </p>
+      </div>
+    </div>
+    <div class="fourth-page-botton-wrapper">
+      <button class="fourth-page-botton"><a href="#">book now</a></button>
+    </div>
+  </div>
+
+  <div class="fifth-page" >
+    <h1>FEEDBACK FROM OUR CLIENTS</h1>
+    <div class="fifth-page-wrapper">
+      <div class="fifth-page-card">
+        <img class="image" src="images/katie.jpg" />
+        <img class="rect" src="images/Rectangle 14.png" />
+        <h3>I HAD THE BEST TIME</h3>
+        <p>
+          This was the first time I had travelled with Peter Sommer Travels.
+          The company specialises in expert-led cultural and gulet tours in
+          Europe. Group numbers are small, accommodation comfortable and food
+          excellent. The expert guide who accompanied us was outstanding -
+          passionate, informative, engaging and entertaining. The itinerary
+          was very well thought out, combining leisure time with activity and
+          not-to-be-missed opportunities to swim in the gulet.
+        </p>
+      </div>
+      <div class="fifth-page-card">
+        <img class="image" src="images/spencer.jpg" />
+        <img class="rect" src="images/Rectangle 14.png" />
+        <h3>IT WAS AMAZING</h3>
+        <p>
+          This was the first time I had travelled with Peter Sommer Travels.
+          The company specialises in expert-led cultural and gulet tours in
+          Europe. Group numbers are small, accommodation comfortable and food
+          excellent. The expert guide who accompanied us was outstanding -
+          passionate, informative, engaging and entertaining. The itinerary
+          was very well thought out, combining leisure time with activity and
+          not-to-be-missed opportunities to swim in the gulet.
+        </p>
+      </div>
+      <div class="fifth-page-botton-wrapper">
+        <button class="fifth-page-botton"><a href="#">book now</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="form" id="connect">
+    <div class="form-wrapper">
+      <form action="Do something.html" method="POST">
+        <div class="field-wrapper">
+          <h1>BOOK A TOUR</h1>
+          <div class="field">
+            <label for="name" class="label"></label>
+            <input type="text" id="name" placeholder="Name" name="name" required />
+          </div>
+          <br /><br />
+
+          <div class="field">
+            <label for="email" class="label"></label>
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </div>
+          <div class="radio-group">
+            <fieldset class="field-set">
+              <input type="radio" class="tour" name="grouptour" />
+              <label for="contacttime1">Group tour</label>
+            </fieldset>
+            <fieldset class="field-set">
+              <input type="radio" class="tour" name="individualtour" />
+              <label for="contacttime2">Individual tour</label>
+            </fieldset>
+          </div>
+
+          <div class="form-botton-wrapper">
+            <button class="form-botton"><a href="#">book now</a></button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
+  </div>
 
-    <div class="third-page" id="third-page">
-      <div class="third-page-wrapper">
-        <div class="locations-card">
-          <img src="images/Vector.svg" />
-          <h3>ADVENTURE</h3>
-          <p>
-            The mission of the organization, in particular the further
-            development of various social activities
-          </p>
-        </div>
-        <div class="locations-card">
-          <img src="images/Vector (1).svg" />
-          <h3>ADVENTURE</h3>
-          <p>
-            The mission of the organization, in particular the further
-            development of various social activities
-          </p>
-        </div>
-        <div class="locations-card">
-          <img src="images/Vector (2).svg" />
-          <h3>ADVENTURE</h3>
-          <p>
-            The mission of the organization, in particular the further
-            development of various social activities
-          </p>
-        </div>
-        <div class="locations-card">
-          <img src="images/Vector (3).svg" />
-          <h3>ADVENTURE</h3>
-          <p>
-            The mission of the organization, in particular the further
-            development of various social activities
-          </p>
-        </div>
-      </div>
-    </div>
+  <nav class="footer">
+    <a href="#home">
+      <img class="footer-logo" src="images/Icon-logo.svg" alt="baloon-tours" />
+    </a>
+    <ul class="footer-items" role="list">
+      <li class="footer-item">
+        <a href="#about-us" class="footer-links">About us</a>
+      </li>
+      <li class="footer-item">
+        <a href="#discounts" class="footer-links">Discounts</a>
+      </li>
+      <li class="footer-item">
+        <a href="#tours" class="footer-links">Tours</a>
+      </li>
+      <li class="footer-item">
+        <a href="#prices" class="footer-links">Prices</a>
+      </li>
+      <li class="footer-item">
+        <a href="#connect" class="footer-links">Connect</a>
+      </li>
+    </ul>
+  </nav>
+</body>
 
-    <div class="fourth-page">
-      <h1>MOST POPULAR TOURS</h1>
-      <div class="fourth-page-wrapper">
-        <div class="fourth-page-card">
-          <img src="images/Photo-card (2).jpg" />
-          <h3>GROUP TOURS</h3>
-          <p>
-            Groups consisting 6 people<br />
-            Duration 2 hours<br />
-            There is 1 guide in each group<br />
-            Flight range 6km<br />
-            Free souvenirs<br />
-          </p>
-        </div>
-        <div class="fourth-page-card">
-          <img src="images/Photo-card.jpg" />
-          <h3>PRIVATE TOURS</h3>
-          <p>
-            Groups consisting 6 people<br />
-            Duration 2 hours<br />
-            There is 1 guide in each group<br />
-            Flight range 6km<br />
-            Free souvenirs<br />
-          </p>
-        </div>
-        <div class="fourth-page-card">
-          <img src="images/Photo-card (1).jpg" />
-          <h3>INSPECTION SITES</h3>
-          <p>
-            Groups consisting 6 people<br />
-            Duration 2 hours<br />
-            There is 1 guide in each group<br />
-            Flight range 6km<br />
-            Free souvenirs<br />
-          </p>
-        </div>
-      </div>
-      <div class="fourth-page-botton-wrapper">
-        <button class="fourth-page-botton"><a href="#">book now</a></button>
-      </div>
-    </div>
-
-    <div class="fifth-page" id="fifth-page">
-      <h1>FEEDBACK FROM OUR CLIENTS</h1>
-      <div class="fifth-page-wrapper">
-        <div class="fifth-page-card">
-          <img class="image" src="images/katie.jpg" />
-          <img class="rect" src="images/Rectangle 14.png" />
-          <h3>I HAD THE BEST TIME</h3>
-          <p>
-            This was the first time I had travelled with Peter Sommer Travels.
-            The company specialises in expert-led cultural and gulet tours in
-            Europe. Group numbers are small, accommodation comfortable and food
-            excellent. The expert guide who accompanied us was outstanding -
-            passionate, informative, engaging and entertaining. The itinerary
-            was very well thought out, combining leisure time with activity and
-            not-to-be-missed opportunities to swim in the gulet.
-          </p>
-        </div>
-        <div class="fifth-page-card">
-          <img class="image" src="images/spencer.jpg" />
-          <img class="rect" src="images/Rectangle 14.png" />
-          <h3>IT WAS AMAZING</h3>
-          <p>
-            This was the first time I had travelled with Peter Sommer Travels.
-            The company specialises in expert-led cultural and gulet tours in
-            Europe. Group numbers are small, accommodation comfortable and food
-            excellent. The expert guide who accompanied us was outstanding -
-            passionate, informative, engaging and entertaining. The itinerary
-            was very well thought out, combining leisure time with activity and
-            not-to-be-missed opportunities to swim in the gulet.
-          </p>
-        </div>
-        <div class="fifth-page-botton-wrapper">
-          <button class="fifth-page-botton"><a href="#">book now</a></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="form">
-      <div class="form-wrapper">
-        <form action="Do something.html" method="POST">
-          <div class="field-wrapper">
-            <h1>BOOK A TOUR</h1>
-            <div class="field">
-              <label for="name" class="label"></label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Name"
-                name="name"
-                required
-              />
-            </div>
-            <br /><br />
-
-            <div class="field">
-              <label for="email" class="label"></label>
-              <input type="email" id="email" name="email" placeholder="Email" />
-            </div>
-            <div class="radio-group">
-              <fieldset class="field-set">
-                <input type="radio" class="tour" name="grouptour" />
-                <label for="contacttime1">Group tour</label>
-              </fieldset>
-              <fieldset class="field-set">
-                <input type="radio" class="tour" name="individualtour" />
-                <label for="contacttime2">Individual tour</label>
-              </fieldset>
-            </div>
-
-            <div class="form-botton-wrapper">
-              <button class="form-botton"><a href="#">book now</a></button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <nav class="footer">
-      <a href="#home">
-        <img
-          class="footer-logo"
-          src="images/Icon-logo.svg"
-          alt="baloon-tours"
-        />
-      </a>
-      <ul class="footer-items" role="list">
-        <li class="footer-item">
-          <a href="#about-us" class="footer-links" id="about-us">About us</a>
-        </li>
-        <li class="footer-item">
-          <a href="#discounts" class="footer-links" id="discounts">Discounts</a>
-        </li>
-        <li class="footer-item">
-          <a href="#tours" class="footer-links" id="tours">Tours</a>
-        </li>
-        <li class="footer-item">
-          <a href="#prices" class="footer-links" id="prices">Prices</a>
-        </li>
-        <li class="footer-item">
-          <a href="#connect" class="footer-links" id="connect">Connect</a>
-        </li>
-      </ul>
-    </nav>
-  </body>
 </html>

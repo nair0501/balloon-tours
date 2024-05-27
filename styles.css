@@ -870,7 +870,9 @@ select {
   color: var(--color-grey);
   margin-left: 1.875rem;
 }
-
+.field-set label {
+  border: none;
+}
 .field-set label {
   color: var(--color-grey);
   margin-left: 30px;
@@ -994,4 +996,7 @@ select {
   .footer {
     height: 100%;
   }
+}
+.radio-group fieldset{
+  border: none;
 }

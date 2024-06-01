@@ -151,7 +151,6 @@ select {
 
 .nav-list {
   display: flex;
-  justify-content: flex-end;
   gap: 3rem;
   align-items: center;
 }
@@ -163,7 +162,6 @@ select {
 .navbar-links {
   color: var(--color-white);
   font-size: var(--font-size-16);
-  display: flex;
   transition: all 0.3s ease;
   height: 100%;
   white-space: nowrap;
@@ -179,9 +177,9 @@ select {
   width: 50%;
   right: 0;
   position: fixed;
+  display: flex;
   flex-direction: column;
   padding-top: 10rem;
-  display: flex;
   z-index: 999;
   translate: 100%;
   transition: 0.5s cubic-bezier(0.36, -0.01, 0, 0.77);
@@ -247,7 +245,6 @@ select {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
   padding: var(--space-30);
 }
 
@@ -338,8 +335,7 @@ button:hover {
   }
 }
 
-.second-page h1 {
-  color: var(--color-orange-brown);
+h1 {
   font-size: var(--font-size-36);
   font-weight: var(--font-weight-bold);
   background-size: 100%;
@@ -348,6 +344,10 @@ button:hover {
   justify-content: center;
   word-spacing: 10px;
   letter-spacing: 10px;
+}
+
+.second-page h1 {
+  color: var(--color-orange-brown);
 }
 
 .second-page-content p {
@@ -562,13 +562,6 @@ button:hover {
 }
 .fourth-page h1 {
   color: var(--color-orange-brown);
-  font-size: var(--font-size-36);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-  text-align: center;
-  justify-content: center;
-  word-spacing: 10px;
-  letter-spacing: 10px;
 }
 
 .fourth-page-card img {
@@ -647,13 +640,6 @@ button:hover {
 
 .fifth-page h1 {
   color: var(--color-white);
-  font-size: var(--font-size-36);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-  text-align: center;
-  justify-content: center;
-  word-spacing: 10px;
-  letter-spacing: 10px;
 }
 
 .image {
@@ -785,14 +771,6 @@ button:hover {
 }
 .field-wrapper h1 {
   color: var(--color-orange-brown);
-  font-size: var(--font-size-36);
-  font-weight: var(--font-weight-bold);
-  background-size: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  justify-content: center;
-  word-spacing: 10px;
-  letter-spacing: 10px;
   margin: 20px;
 }
 

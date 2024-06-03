@@ -150,6 +150,12 @@ select {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
 
 .nav-list {
   display: flex;
@@ -172,7 +178,6 @@ select {
   color: var(--color-grey);
   transition: all 0.3s ease;
 }
-
 
 .side-bar-wrapper {
   background-color: #222222;

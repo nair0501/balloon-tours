@@ -94,7 +94,9 @@ body {
   min-height: 100%;
   overflow-x: hidden;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
@@ -170,6 +172,7 @@ select {
   color: var(--color-grey);
   transition: all 0.3s ease;
 }
+
 
 .side-bar-wrapper {
   background-color: #222222;
@@ -863,7 +866,6 @@ h1 {
   width: 100%;
   margin-bottom: 40px;
 }
-
 .footer-links {
   color: var(--color-white);
   font-size: var(--font-size-16);

@@ -240,13 +240,11 @@ h1 {
 
 .heading {
   font-size: 4rem;
-  margin-bottom: var(--space-25);
-  font-weight: var(--font-weight-medium);
 }
 
 .sub-heading {
   text-align: center;
-  font-size: var(--font-size-40);
+  font-size: var(--font-size-50);
 }
 
 .button {

@@ -239,12 +239,12 @@ h1 {
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .sub-heading {
   text-align: center;
-  font-size: var(--font-size-50);
+  font-size: var(--font-size-40);
 }
 
 .button {
@@ -261,6 +261,7 @@ h1 {
   font-weight: var(--font-weigth-medium);
   background-color: var(--color-white);
   margin: 4rem 0 4rem 0;
+  margin-inline: auto ;
 }
 
 .button a {
@@ -270,6 +271,8 @@ h1 {
   background-color: var(--color-orange-brown);
   margin: 1rem 0 1rem 1rem;
   color: var(--color-white);
+  color: var(--color-white);
+
 }
 
 .form-button a {
@@ -283,14 +286,15 @@ button:hover {
 }
 
 .fifth-page-button-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 .second-page {
   background-color: var(--color-off-white);
 }
-
+.second-page h1 {
+  font-size: var(--font-size-50);
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -302,24 +306,16 @@ button:hover {
   gap: var(--space-10);
   margin-left: var(--space-80);
 }
-
-@media (max-width: 70rem) {
-  .second-page-content {
-    grid-auto-columns: 1fr;
-  }
- 
-}
-.second-page .heading{
+.second-page .heading {
   color: var(--color-orange-brown);
 }
 
 .second-page-content .sub-heading {
   color: var(--color-orange-brown);
-  font-size: var(--font-size-40);
   text-align: left;
 }
 .second-page-content span {
-  font-size: var(--font-size-28);
+  font-size: var(--font-size-20);
   color: var(--color-grey);
   font-weight: var(--font-weight-light);
   margin-top: var(--space-30);
@@ -351,7 +347,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: var(--space-30);
+    margin: var(--space-55);
   }
   .container {
     display: flex;
@@ -374,7 +370,6 @@ button:hover {
     margin: 0 !important;
     align-self: center;
   }
-
 }
 
 .third-page {
@@ -493,7 +488,7 @@ button:hover {
   line-height: 2rem;
 }
 
-.fourth-page-botton-wrapper {
+.fourth-page-button-wrapper {
   margin-inline: 8%;
 }
 
@@ -728,7 +723,6 @@ button:hover {
     height: var(--space-42);
     padding: var(--space-10);
   }
-  
 }
 
 .footer {
@@ -777,6 +771,4 @@ button:hover {
   .footer {
     height: 100%;
   }
-
 }
-

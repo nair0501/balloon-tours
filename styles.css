@@ -49,18 +49,6 @@
   padding: 0;
   font: inherit;
 }
-
-ul,
-ol,
-li,
-a {
-  list-style-type: none;
-  text-decoration: none;
-}
-.radio-group fieldset {
-  border: none;
-}
-
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -80,35 +68,35 @@ body {
   line-height: 1.5;
 }
 
+ul,
+ol,
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+.radio-group fieldset {
+  border: none;
+}
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
+
 img,
 picture,
 svg {
   max-width: 100%;
   display: block;
 }
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 h1 {
   font-size: var(--font-size-50);
   font-weight: var(--font-weight-bold);
@@ -116,8 +104,8 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
-  word-spacing: 10px;
-  letter-spacing: 10px;
+  word-spacing: 0.625rem;
+  letter-spacing: 0.625rem;
   padding-top: var(--space-42);
 }
 
@@ -262,8 +250,10 @@ h1 {
   background-color: var(--color-white);
   margin: 4rem 0 4rem 0;
 }
-.margin-inline {
-  margin-inline: auto;
+button:hover {
+  box-shadow: none;
+  scale: 1.5;
+  transition: all 0.35s ease-in-out;
 }
 
 .button a {
@@ -281,11 +271,6 @@ h1 {
   color: var(--color-white);
 }
 
-button:hover {
-  box-shadow: none;
-  scale: 1.5;
-  transition: all 0.35s ease-in-out;
-}
 .second-page {
   background-color: var(--color-off-white);
 }
@@ -446,7 +431,7 @@ button:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   margin: var(--space-50);
-  column-gap: 4.3rem;
+  column-gap: var(--space-70);
 }
 
 .fourth-page-card {
@@ -485,7 +470,7 @@ button:hover {
   margin-right: auto;
   width: 95%;
   height: 100%;
-  line-height: 2rem;
+  line-height: var(--space-30);
 }
 
 @media screen and (max-width: 70rem) {
